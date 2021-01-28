@@ -8,12 +8,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <!-- Place favicon.ico in the root directory -->
-
     </head>
-    <body>
+    <body class="container">
         <h1 id="welcome" class="text-center">Welcome to our Bank</h1>
-        <div id="login-area" class="container">
+        <div id="login-area">
             <div class="submit-area">
                 <h4>Login</h4>
                 <input class="form-control" placeholder="Enter your email"/>
@@ -21,6 +19,28 @@
                 <input class="form-control" placeholder="Enter your password"/>
                 <br />
                 <button id="login" class="btn btn-success">Login</button>
+            </div>
+        </div>
+        <div id="transaction-area">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="deposit">
+                        <h5>Diposit</h5>
+                        <h2>$00</h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="withdraw">
+                        <h5>Withdraw</h5>
+                        <h2>$00</h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="balance">
+                        <h5>Balance</h5>
+                        <h2>$00</h2>
+                    </div>
+                </div>
             </div>
         </div>
         <script src="./app.js"></script>

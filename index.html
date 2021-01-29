@@ -24,21 +24,40 @@
         <div id="transaction-area">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="deposit">
-                        <h5>diposit</h5>
-                        <h2>$00</h2>
+                    <div class="deposit bg-primary shadow-lg">
+                        <h5>Diposit</h5>
+                        <h2>$<span id="currentDeposit">00</span></h2>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="withdraw">
+                    <div class="withdraw bg-warning shadow-lg">
                         <h5>Withdraw</h5>
-                        <h2>$00</h2>
+                        <h2>$<span id="currentWithdraw">00</span></h2>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="balance">
+                    <div class="balance bg-success shadow-lg">
                         <h5>Balance</h5>
-                        <h2>$00</h2>
+                        <h2>$<span id="currentBalance">00</span></h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="submit-area">
+                        <h4>Deposit</h4>
+                        <input id="depositAmount" type="text" class="form-control" placeholder="$amount you want to deposit"/>
+                        <br />
+                        <button id="addDeposit" class="btn btn-success">Deposit</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="submit-area">
+                        <h4>Withdraw</h4>
+                        <input id="withdrawAmount" type="text" class="form-control" placeholder="$amount you want to withdraw"/>
+                        <br />
+                        <button id="addWithdraw" class="btn btn-success">Withdraw</button>
                     </div>
                 </div>
             </div>
